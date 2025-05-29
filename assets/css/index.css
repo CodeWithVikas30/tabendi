@@ -743,3 +743,15 @@ body {
 
 }
 
+
+
+
+/* Motto Section Css */
+
+.health_journey{
+  background-color: #f37021;
+  color: #fff;
+}
+.health_journey:hover{
+  background-color: #e65c00;
+}
