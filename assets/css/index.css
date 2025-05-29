@@ -1,0 +1,745 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+ 
+  padding:0;
+
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.hero-section h1 {
+  
+  font-size: 50px; /* Adjust as needed */
+  font-weight: 600;
+  color: #131918;
+  margin-bottom: 20px;
+}
+
+.hero-section .highlight {
+  color: #F47C20; /* Orange color from image */
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+  background-color: #F47C20; /* Orange color from image */
+  border-color: #F47C20; /* Orange color from image */
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #F47C20;  
+  border-color: #F47C20;
+}
+.hero-section .content-column{
+  background: url(/assets/img/bg-l.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-section .image-column img {
+  display: block;
+  max-width: 100%;
+  height: 490px;
+  margin-left: 150px;
+  width: 488px;
+  background: url(/assets/img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* You might need to adjust positioning and size further based on the exact image and desired responsiveness */
+}
+
+/* Add responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section {
+    padding: 40px 0;
+  }
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+.content {
+  max-width: 550px;
+  margin-top: 66px;
+}
+.content h2 {
+  font-size: 2.8rem;
+  margin-top: 8px;
+}
+ 
+
+#d1 {
+  height: 194px;
+}
+#d2 {
+  width: 209px;
+  position: absolute;
+  top: 201px;
+  left: 18px;
+  height: 201px;
+}
+#d3 {
+  width: 240px;
+  height: 272px;
+  position: absolute;
+  left: 279px;
+  top: 126px;
+}
+
+
+
+.highlight {
+  color: #ff6600;
+  font-weight: 600;
+}
+
+.btn-orange {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+.service-card {
+  padding: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #fff7ed;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  /* Max height already set inline, ensure proper display */
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.service-card h5 {
+  color: #1a1a1a;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.our-services-section .text-orange {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.our-services-section .text-orange::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #f37021;
+}
+
+.our-services-section h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+
+.specialist-card {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.specialist-card:hover {
+  transform: translateY(-10px);
+}
+
+.specialist-card img {
+  border-radius: 8px;
+}
+
+.specialist-card h5 {
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+.easy-connect-app-section h3,
+.web-based-link-section h3 {
+  color: #f37021; /* Using the orange color variable/value */
+  margin-bottom: 20px;
+}
+
+.easy-connect-app-section p,
+.web-based-link-section p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.app-image,
+.web-image {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 10px; /* Add padding inside the border */
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Treat image as block for transform, keep centered */
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto;
+}
+
+.app-image:hover,
+.web-image:hover {
+  transform: scale(1.05); /* Zoom in slightly */
+}
+
+.why-choose-us-section {
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.why-choose-us-section .section-title {
+  color: #e65c00; /* A slightly darker orange for the title */
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-section .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #f37021; /* Orange line under the title */
+  border-radius: 1.5px;
+}
+
+.benefit-item {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #f37021; /* Orange border on the left */
+}
+
+.benefit-item h4 {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+}
+
+.benefit-item p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.testimonials-section .text-orange {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.testimonials-section .text-orange::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #f37021;
+}
+
+.testimonials-section h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  border: 3px solid #f37021; /* Orange border around image */
+  padding: 2px; /* Space between image and border */
+}
+
+.testimonial-card .text-warning img {
+  font-size: 1rem;
+  border: none;
+}
+
+.testimonial-card .collan img{
+  color: #f37021;
+  border: none;
+ 
+}
+
+.motto-section {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #fff;
+}
+
+.motto-section blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.motto-section h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.motto-section p {
+  font-size: 1.2rem;
+}
+
+/* Ensure orange color is applied where specified */
+.motto-section .text-orange {
+  color: #f37021;
+}
+
+.mobile-app-section {
+  background-color: #fff8f2; /* Light background color similar to the hero section */
+}
+
+.mobile-app-section h2 {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mobile-app-section h3 {
+  color: #f37021; /* Orange color for the subheading */
+  font-size: 1.8rem;
+}
+
+.mobile-app-section p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mobile-app-section .d-flex img {
+  /* Adjust height as needed, inline style also present */
+  height: 45px;
+}
+
+.mobile-app-section .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.bgi{
+  background: url(/assets/img/bg.png);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  /* Styles for tablets and smaller desktops */
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile phones and tablets */
+
+  /* Adjustments for Hero Section */
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-section .content-column h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .highlight {
+    font-size: 2rem;
+  }
+
+  .hero-section .content-column p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .image-column {
+    margin-top: 30px;
+  }
+
+  .hero-section .image-column img {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 90%;
+  }
+
+  /* Adjustments for About Us Section */
+  .about-section .d-flex.flex-wrap.justify-content-center.gap-3 img {
+    max-width: 100%;
+    width: 180px;
+    height: auto;
+  }
+
+  .about-section .content {
+    margin-top: 30px;
+  }
+
+  .about-section .content h2 {
+    font-size: 2rem;
+  }
+
+  /* Adjustments for Our Services Section */
+  .our-services-section h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjustments for Specialist Section */
+  .specialists-section h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjustments for App and Web Link Sections */
+  .easy-connect-app-section h3,
+  .web-based-link-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .easy-connect-app-section p,
+  .web-based-link-section p {
+    font-size: 0.9rem;
+  }
+
+  .app-image,
+  .web-image {
+    max-width: 90%;
+  }
+
+  .mobile-app-section h2 {
+    font-size: 2rem;
+  }
+
+  .mobile-app-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .mobile-app-section p {
+    font-size: 0.9rem;
+  }
+
+  .mobile-app-section .d-flex {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 576px) {
+  /* Styles for smaller mobile phones */
+  .hero-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .hero-section .image-column img {
+    width: 100%;
+  }
+
+  .about-section .d-flex.flex-wrap.justify-content-center.gap-3 img {
+    width: 150px;
+  }
+
+  /* Adjustments for Service Cards on smaller mobile phones */
+  .our-services-section .row .col-lg-3,
+  .our-services-section .row .col-md-6,
+  .our-services-section .row .col-sm-6 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* Adjustments for Specialist Cards on smaller mobile phones */
+  .specialists-section .row .col-lg-3,
+  .specialists-section .row .col-md-6,
+  .specialists-section .row .col-sm-6 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .specialist-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .mobile-app-section .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-app-section .d-flex a {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .mobile-app-section .d-flex a:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+/* Styles for Modals (Login/Signup) */
+.modal-content {
+  border-radius: 10px; /* Rounded corners for the modal */
+  overflow: hidden; /* Ensures rounded corners on internal elements */
+}
+
+.modal-body {
+  padding: 0; /* Remove default padding as inner row/cols have padding */
+}
+
+.modal .bg-orange {
+  background-color: #f37021; /* Orange background for the left side */
+  padding: 40px;
+}
+
+.modal .bg-orange h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.modal .bg-orange h5 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.modal .bg-orange p {
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white text */
+  font-size: 0.9rem;
+}
+
+.modal .bg-orange .fab {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.modal .bg-orange .fab:hover {
+  color: #e0e0e0; /* Lighter color on hover */
+}
+
+.modal .form-label {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.modal .form-control {
+  border-radius: 5px;
+  border-color: #e0e0e0;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.modal .form-control:focus {
+  border-color: #f37021;
+  box-shadow: 0 0 0 0.25rem rgba(243, 112, 33, 0.25);
+}
+
+.modal .text-orange {
+  color: #f37021;
+}
+
+.modal .btn-orange {
+  background-color: #f37021;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal .btn-orange:hover {
+  background-color: #d95f1d;
+}
+
+.modal .btn-light.btn-social {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #1a1a1a;
+  transition: background-color 0.3s ease;
+}
+
+.modal .btn-light.btn-social:hover {
+  background-color: #f8f9fa;
+}
+
+.modal .btn-social i {
+  font-size: 1.2rem;
+}
+
+.modal .modal-dialog {
+    max-width: 700px; /* Adjust modal width */
+}
+
+/* Styles for Get In Touch Section */
+.contact-section {
+  background-color: #fff8f2; /* Light background */
+}
+
+.contact-section .text-orange {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-section .text-orange::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #f37021;
+}
+
+.contact-section h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+
+.contact-section .card {
+  border: none; /* Remove card border */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Add shadow */
+  overflow: hidden; /* Ensures rounded corners on internal elements */
+}
+
+.contact-section .bg-dark {
+  background-color: #343a40 !important; /* Dark background for contact info side */
+  color: #fff;
+  padding: 30px;
+}
+
+.contact-section .bg-dark h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-section .bg-dark .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important; /* Lighter muted text */
+}
+
+.contact-section .bg-dark .list-unstyled li {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.contact-section .bg-dark .list-unstyled i {
+  color: #f37021; /* Orange icons */
+  font-size: 1.1rem;
+}
+
+.contact-section .form-label {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.contact-section .form-control {
+  border-radius: 5px;
+  border-color: #e0e0e0;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.contact-section .form-control:focus {
+  border-color: #f37021;
+  box-shadow: 0 0 0 0.25rem rgba(243, 112, 33, 0.25);
+}
+
+.contact-section .btn-orange {
+  background-color: #f37021;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section .btn-orange:hover {
+  background-color: #d95f1d;
+}
+
+
+/* Responsive adjustments for Get In Touch Section */
+@media (max-width: 768px) {
+  .contact-section .card .row > div {
+    margin-bottom: 20px; /* Add space between stacked columns in the card */
+  }
+
+  .contact-section .card .row > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-section .bg-dark {
+    border-radius: 10px 10px 0 0 !important; /* Adjust border radius for stacked layout */
+  }
+
+}
+

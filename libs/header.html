@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Test Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons (assuming you are using this based on classes like fab fa-facebook-f) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Add any necessary custom styles here */
+    .bg-orange {
+      background-color: #fd7e14 !important; /* Example orange color, adjust if needed */
+    }
+    .btn-orange {
+      background-color: #fd7e14 !important;
+      border-color: #fd7e14 !important;
+      color: white !important;
+    }
+    .btn-orange:hover {
+       background-color: #e06d12 !important;
+       border-color: #e06d12 !important;
+       color: white !important;
+    }
+    .logo-img {
+        height: 40px; /* Adjust as needed */
+    }
+    .btn-social {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+        padding: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Content from libs/header.html -->
+  <header>
+    <!-- Topbar -->
+    <div class="topbar bg-orange text-white py-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="topbar-text">Welcome to <strong>Jersey Eats</strong></div>
+        <div class="topbar-phone">
+          <i class="fas fa-phone-alt me-1"></i> +91-77000-43200
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="/assets/img/logo.png" alt="Logo" class="logo-img me-2" />
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <!-- Centered Menu -->
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Message from CEO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Patient/Customer/Provider Portal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">User Agreements</a>
+            </li>
+          </ul>
+
+          <!-- Login Button (right aligned) -->
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content from login_modal.html -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Left side content (Logo, Welcome message, text, social icons) -->
+          <div class="row">
+            <div class="col-md-6 bg-orange text-white p-4 d-flex flex-column justify-content-center">
+              <div class="text-center">
+                <h2>Logo</h2>
+                <h4>Welcome to Login page</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+                <div class="social-icons mt-3">
+                  <a href="#" class="btn btn-light btn-social mx-1"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="btn btn-light btn-social mx-1"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="btn btn-light btn-social mx-1"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="btn btn-light btn-social mx-1"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Right side content (Login Form) -->
+            <div class="col-md-6 p-4">
+              <form>
+                <div class="mb-3">
+                  <label for="emailAddress" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Email Address">
+                </div>
+                <div class="mb-3 form-check d-flex justify-content-between">
+                  <div>
+                     <input type="checkbox" class="form-check-input" id="keepMeLoggedIn">
+                     <label class="form-check-label" for="keepMeLoggedIn">Keep me logged in</label>
+                  </div>
+                   <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn btn-orange w-100">Log In</button>
+                <div class="text-center my-3">OR</div>
+                 <div class="social-icons text-center mb-3">
+                  <a href="#" class="btn btn-primary btn-social mx-1"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="btn btn-danger btn-social mx-1"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="text-center">
+                  Don't have an account ? <a href="#"><strong>Register</strong></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your custom scripts -->
+  <script src="include.js"></script>
+
+</body>
+</html> 

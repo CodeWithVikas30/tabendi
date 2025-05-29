@@ -1,0 +1,190 @@
+.text-orange {
+  color: #f37021;
+}
+
+.footer a:hover {
+  text-decoration: underline !important;
+}
+
+.footer .app-banner {
+  background-color: #e9ecef; /* Light grey background */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d0d0d0; /* Subtle separator line */
+}
+
+.footer .footer-main {
+  background-color: #f8f9fa; /* Very light background */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .footer-main h5,
+.footer .footer-main h6 {
+  color: #212529; /* Darker text for headings */
+  margin-bottom: 20px;
+}
+
+.footer .footer-main p,
+.footer .footer-main a {
+  color: #6c757d; /* Muted text color */
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer .footer-main ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .footer-main ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-main ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer .footer-main img {
+  margin-right: 8px; /* Increased space between payment icons */
+  vertical-align: middle; /* Align icons nicely */
+}
+
+.footer .footer-main .col-md-4 img {
+  max-width: 150px; /* Adjust max-width as needed */
+  height: auto;
+  margin-bottom: 15px; /* Space below the logo */
+}
+
+.footer .footer-bottom {
+  background-color: #f37021; /* Orange background */
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.footer .footer-bottom a {
+  color: #fff; /* White links in bottom bar */
+  text-decoration: none;
+  margin-left: 15px; /* Space between bottom links */
+}
+
+.footer .footer-bottom a:first-child {
+    margin-left: 0;
+}
+
+.footer .footer-bottom a:hover {
+  text-decoration: underline !important;
+}
+
+/* Responsive Adjustments for Footer */
+@media (max-width: 768px) {
+  /* Adjustments for columns in the main footer */
+  .footer .footer-main .col-md-4 { /* Logo column */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer .footer-main .row .col-md-2, /* Page Links column */
+  .footer .footer-main .row .col-md-3 { /* Contact Info column */
+    width: 50%; /* Make columns take 50% width */
+    flex: 0 0 50%; /* Ensure proper flex behavior */
+    max-width: 50%; /* Limit max-width */
+    margin-bottom: 20px; /* Add space below */
+    text-align: center; /* Center align text */
+  }
+
+  .footer .footer-main .col-md-2:last-child, /* Specific adjustment if Contact is the last */
+  .footer .footer-main .col-md-3:last-child { /* Specific adjustment if Payment is the last after these changes */
+    margin-bottom: 0;
+  }
+
+  /* Adjustments for the bottom bar */
+  .footer .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .footer-bottom a {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .footer .footer-bottom a:first-child {
+    margin-top: 0;
+  }
+
+  /* Adjustments for app banner */
+  .footer .app-banner p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .footer .app-banner img {
+     height: 45px;
+     margin: 0 5px;
+  }
+
+  /* Adjust padding for footer sections */
+  .footer .footer-main,
+  .footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Styles for smaller mobile phones */
+
+  /* Adjustments for columns in the main footer */
+  .footer .footer-main .col-md-2, /* Page Links column */
+  .footer .footer-main .col-md-3 { /* Contact Info column */
+    width: 50%; /* Make columns take 50% width */
+    flex: 0 0 50%; /* Ensure proper flex behavior */
+    max-width: 50%; /* Limit max-width */
+    margin-bottom: 20px; /* Add space below */
+    text-align: center; /* Center align text */
+  }
+
+  .footer .footer-main .col-md-4 { /* Logo column - ensure it stacks above */
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Adjustments for the bottom bar */
+  .footer .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .footer-bottom a {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .footer .footer-bottom a:first-child {
+    margin-top: 0;
+  }
+
+  /* Adjustments for app banner */
+  .footer .app-banner p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .footer .app-banner img {
+     height: 45px;
+     margin: 0 5px;
+  }
+
+  /* Adjust padding for footer sections */
+  .footer .footer-main,
+  .footer .footer-bottom {
+    padding-top: 20px; /* Further reduce padding for very small screens */
+    padding-bottom: 20px; /* Further reduce padding for very small screens */
+  }
+} 
