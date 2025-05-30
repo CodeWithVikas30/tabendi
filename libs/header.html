@@ -94,63 +94,68 @@
   </header>
 
   <!-- Content from login_modal.html -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Left side content (Logo, Welcome message, text, social icons) -->
-          <div class="row">
-            <div class="col-md-6 bg-orange text-white p-4 d-flex flex-column justify-content-center">
-              <div class="text-center">
-                <h2>Logo</h2>
-                <h4>Welcome to Login page</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
-              <div class="social-icons">
-                  <img src="/assets/img/fb.png" alt="Facebook" class="social-icon" style="width:40px; height:40px; ">
-                  <img src="/assets/img/twitter.png" alt="Twitter" class="social-icon" style="width:40px; height:40px;">
-                  <img src="/assets/img/google.png" alt="Google Plus" class="social-icon" style="width:40px; height:40px;">
-                  <img src="/assets/img/linkedin.png" alt="LinkedIn" class="social-icon" style="width:40px; height:40px;">
-                </div>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          <!-- Left Orange Side -->
+          <div class="col-md-5 bg-orange text-white d-flex flex-column justify-content-center align-items-center p-4 text-center">
+            <h2 class="fw-bold">Logo</h2>
+            <h4 class="mb-3">Welcome to Login page</h4>
+            <p class="mb-4">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+              <img src="/assets/img/fb.png" alt="Facebook" style="width:40px; height:40px;">
+              <img src="/assets/img/twitter.png" alt="Twitter" style="width:40px; height:40px;">
+              <img src="/assets/img/google.png" alt="Google Plus" style="width:40px; height:40px;">
+              <img src="/assets/img/linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
+            </div>
+          </div>
+
+          <!-- Right White Login Form -->
+          <div class="col-md-7 p-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label fw-bold">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
               </div>
-            </div>
-            <!-- Right side content (Login Form) -->
-            <div class="col-md-6 p-4">
-              <form>
-                <div class="mb-3">
-                  <label for="emailAddress" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+              <div class="mb-3">
+                <label for="password" class="form-label fw-bold">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="mb-3 d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="keepMeLoggedIn">
+                  <label class="form-check-label" for="keepMeLoggedIn">Keep me logged in</label>
                 </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Email Address">
-                </div>
-                <div class="mb-3 form-check d-flex justify-content-between">
-                  <div>
-                     <input type="checkbox" class="form-check-input" id="keepMeLoggedIn">
-                     <label class="form-check-label" for="keepMeLoggedIn">Keep me logged in</label>
-                  </div>
-                   <a href="#">Forgot Password</a>
-                </div>
-                <button type="submit" class="btn btn-orange w-100">Log In</button>
-                <div class="text-center my-3">OR</div>
-                 <div class="social-icons text-center mb-3">
-                  <a href="#" class="btn btn-primary btn-social mx-1"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="btn btn-danger btn-social mx-1"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-                <div class="text-center">
-                  Don't have an account ? <a href="#"><strong>Register</strong></a>
-                </div>
-              </form>
-            </div>
+                <a href="#" class="text-primary">Forgot Password</a>
+              </div>
+              <button type="submit" class="btn w-100 text-white" style="background-color: #f37020;">Log In</button>
+
+              <div class="text-center my-3">OR</div>
+
+              <div class="d-flex justify-content-center mb-3">
+                <a href="#" class="btn btn-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+
+              <div class="text-center">
+                Don't have an account ? <a href="#"><strong class="text-primary">Register</strong></a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

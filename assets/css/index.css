@@ -556,208 +556,196 @@ Height:271px;
 }
 
 /* Styles for Modals (Login/Signup) */
-.modal-content {
-  border-radius: 10px; /* Rounded corners for the modal */
-  overflow: hidden; /* Ensures rounded corners on internal elements */
+/* Overall Modal Layout */
+.login-modal {
+  display: flex;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.modal-body {
-  padding: 0; /* Remove default padding as inner row/cols have padding */
-}
-
-.modal .bg-orange {
-  background-color: #f37021; /* Orange background for the left side */
-  padding: 40px;
-}
-
-.modal .bg-orange h2 {
+/* Left Side - Orange Panel */
+.modal-left {
+  background-color: #f37021;
   color: #fff;
-  font-size: 2rem;
+  flex: 1;
+  padding: 40px 30px;
+  text-align: center;
 }
 
-.modal .bg-orange h5 {
-  color: #fff;
-  font-size: 1.3rem;
-}
-
-.modal .bg-orange p {
-  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white text */
-  font-size: 0.9rem;
-}
-
-.modal .bg-orange .fab {
-  color: #fff;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.modal .bg-orange .fab:hover {
-  color: #e0e0e0; /* Lighter color on hover */
-}
-
-.modal .form-label {
+.modal-left .logo {
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #1a1a1a;
-  font-size: 0.9rem;
-}
-
-.modal .form-control {
-  border-radius: 5px;
-  border-color: #e0e0e0;
-  font-size: 0.9rem;
-  padding: 10px;
-}
-
-.modal .form-control:focus {
-  border-color: #f37021;
-  box-shadow: 0 0 0 0.25rem rgba(243, 112, 33, 0.25);
-}
-
-.modal .text-orange {
-  color: #f37021;
-}
-
-.modal .btn-orange {
-  background-color: #f37021;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 30px;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-}
-
-.modal .btn-orange:hover {
-  background-color: #d95f1d;
-}
-
-.modal .btn-light.btn-social {
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 10px;
-  color: #1a1a1a;
-  transition: background-color 0.3s ease;
-}
-
-.modal .btn-light.btn-social:hover {
-  background-color: #f8f9fa;
-}
-
-.modal .btn-social i {
-  font-size: 1.2rem;
-}
-
-.modal .modal-dialog {
-    max-width: 700px; /* Adjust modal width */
-}
-
-/* Styles for Get In Touch Section */
-.contact-section {
-  background-color: #fff8f2; /* Light background */
-}
-
-.contact-section .text-orange {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.contact-section .text-orange::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #f37021;
-}
-
-.contact-section h2 {
-  color: #1a1a1a;
-  font-size: 2rem;
-}
-
-.contact-section .card {
-  border: none; /* Remove card border */
-  border-radius: 10px; /* Rounded corners for the card */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Add shadow */
-  overflow: hidden; /* Ensures rounded corners on internal elements */
-}
-
-.contact-section .bg-dark {
-  background-color: #343a40 !important; /* Dark background for contact info side */
-  color: #fff;
-  padding: 30px;
-}
-
-.contact-section .bg-dark h5 {
-  color: #fff;
   margin-bottom: 20px;
 }
 
-.contact-section .bg-dark .text-muted {
-  color: rgba(255, 255, 255, 0.7) !important; /* Lighter muted text */
+.modal-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.contact-section .bg-dark .list-unstyled li {
-  margin-bottom: 15px;
-  font-size: 0.95rem;
-}
-
-.contact-section .bg-dark .list-unstyled i {
-  color: #f37021; /* Orange icons */
-  font-size: 1.1rem;
-}
-
-.contact-section .form-label {
-  font-weight: bold;
-  color: #1a1a1a;
+.modal-left p {
   font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
 }
 
-.contact-section .form-control {
-  border-radius: 5px;
-  border-color: #e0e0e0;
-  font-size: 0.9rem;
+.modal-left .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-left .social-icons i {
+  background: #fff;
+  color: #f37021;
   padding: 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
-.contact-section .form-control:focus {
-  border-color: #f37021;
-  box-shadow: 0 0 0 0.25rem rgba(243, 112, 33, 0.25);
+.modal-left .social-icons i:hover {
+  background: #f8f8f8;
 }
 
-.contact-section .btn-orange {
-  background-color: #f37021;
+/* Right Side - Form */
+.modal-right {
+  flex: 1;
+  background: #fff;
+  padding: 40px 30px;
+}
+
+.modal-right h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.modal-right label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-right input[type="email"],
+.modal-right input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-right .remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.modal-right .remember a {
+  color: #f37021;
+  text-decoration: none;
+}
+
+.modal-right .btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #f37021;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 30px;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.contact-section .btn-orange:hover {
-  background-color: #d95f1d;
+.modal-right .btn-login:hover {
+  background: #d95f1d;
 }
 
+/* OR divider */
+.modal-right .divider {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.85rem;
+  color: #888;
+  position: relative;
+}
 
-/* Responsive adjustments for Get In Touch Section */
+.modal-right .divider::before,
+.modal-right .divider::after {
+  content: '';
+  height: 1px;
+  width: 40%;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.modal-right .divider::before {
+  left: 0;
+}
+
+.modal-right .divider::after {
+  right: 0;
+}
+
+/* Social Buttons */
+.modal-right .social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-right .social-login i {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 50%;
+  color: #444;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-right .register-link {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.modal-right .register-link a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal-right .register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .contact-section .card .row > div {
-    margin-bottom: 20px; /* Add space between stacked columns in the card */
+  .login-modal {
+    flex-direction: column;
   }
 
-  .contact-section .card .row > div:last-child {
-    margin-bottom: 0;
+  .modal-left,
+  .modal-right {
+    padding: 30px 20px;
   }
-
-  .contact-section .bg-dark {
-    border-radius: 10px 10px 0 0 !important; /* Adjust border radius for stacked layout */
-  }
-
 }
+
+
+
 
 
 
