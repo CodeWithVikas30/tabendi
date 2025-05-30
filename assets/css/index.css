@@ -138,6 +138,8 @@ body {
 }
 
 .service-card {
+  Width:284.42px;
+Height:271px;
   padding: 30px;
   border: 1px solid #f0f0f0;
   border-radius: 10px;
@@ -156,12 +158,24 @@ body {
 }
 
 .service-card h5 {
-  color: #1a1a1a;
+    color: #1a1a1a;
+    font-family: Poppins;
+    font-weight: 600 !important;
+    font-size: 20px;
+    line-height: 62px;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 
 .service-card p {
-  color: #666;
-  font-size: 0.9rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 
 .our-services-section .text-orange {
@@ -170,16 +184,18 @@ body {
   margin-bottom: 10px;
 }
 
+
 .our-services-section .text-orange::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #f37021;
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 118%;
+    transform: translateX(-50%);
+    width: 42px;
+    height: 2px;
+    background-color: #f37021;
 }
+
 
 .our-services-section h2 {
   color: #1a1a1a;
