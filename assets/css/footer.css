@@ -7,14 +7,20 @@
 }
 
 .footer .app-banner {
-  background-color: #e9ecef; /* Light grey background */
+  background-color: #F0F0F5;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #d0d0d0; /* Subtle separator line */
+  border-bottom: 1px solid #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .app-banner p {
+  margin-right: 20px;
 }
 
 .footer .footer-main {
-  background-color: #f8f9fa; /* Very light background */
+  background-color: #F0F0F5 !important; /* Very light background */
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -136,7 +142,12 @@
 
 @media (max-width: 576px) {
   /* Styles for smaller mobile phones */
-
+  body .footer .col-md-3.mb-4.col-sm-12 {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+  }
+  
   /* Adjustments for columns in the main footer */
   .footer .footer-main .col-md-2, /* Page Links column */
   .footer .footer-main .col-md-3 { /* Contact Info column */
@@ -188,3 +199,31 @@
     padding-bottom: 20px; /* Further reduce padding for very small screens */
   }
 } 
+
+section.about-us {
+  position: relative;
+}
+section.about-us .text-orange {
+  color: #f37021;
+  line-height: normal;
+  margin: 70px 0 0;
+  position: relative;
+}
+section.about-us .text-orange:after{
+  background: #f37021;
+  content: '';
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  bottom: 12px;
+  margin-left: 10px;
+}
+section.about-us .text-outline {
+  position: absolute;
+  z-index: -1;
+}
+section.about-us .text-outline {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}

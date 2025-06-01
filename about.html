@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Tabendi Healthcare Network</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+    }
+
+    /* Text Outline */
+    .text-outline {
+      font-size: 100px;
+      color: transparent;
+      -webkit-text-stroke: 1px #fcd6b1;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    .text-orange {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 62px;
+        letter-spacing: 0%;
+        color: #F47C20;
+    }
+
+    .main-heading {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 62px;
+
+
+    }
+
+    .main-heading span {
+        font-family: Poppins;
+font-weight: 700;
+letter-spacing: 0%;
+
+    }
+
+    .description-text {
+      
+      font-family: Poppins;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+color: #000000B2;
+
+
+    }
+
+    .about-us img {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .about-us .img-fluid {
+        position: relative !important;
+        margin: 10px 0 !important;
+      }
+
+      .text-outline {
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .main-heading {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .description-text {
+        text-align: center;
+      }
+    }
+
+    /* Custom styling for Commitment and Future Section */
+    .commitment-future-section .row > div {
+        border-left: 5px solid #f37020; /* Orange left border */
+        padding-left: 25px; /* Add padding to the left of the border */
+        background-color: #ffffff; /* Ensure white background behind the border */
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; /* Add a subtle shadow */
+    }
+
+    .commitment-future-section h3 {
+        color: #343a40; /* Darken the heading color */
+    }
+
+    .commitment-future-section .border-top {
+        border-color: #f37020 !important; /* Match border color with the section border */
+    }
+    section.ceo-vision-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <div include-html="/libs/header.html"></div>
+
+  <!-- About Us Section (Pixel Perfect) -->
+  <section class="about-us py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        
+        <!-- Images Column -->
+        <div class="col-lg-6 position-relative d-flex justify-content-center about-img-wrapper">
+          <img src="/assets/img/Mask group (2).png" class="img-fluid position-absolute top-0 start-0" style="width: 298.0364990234375;
+          height: 277.0132141113281;" alt="Doctor 1">
+          <img src="/assets/img/Mask group (5).png" class="img-fluid position-relative ms-5 mt-5" style="width: 272.8645324707031;
+          height: 341.3323669433594;" alt="Doctor 2">
+        </div>
+  
+        <!-- Text Column -->
+        <div class="col-lg-6">
+          <h1 class="text-outline">About Us</h1>
+          <p class="text-orange ">About Us</p>
+          <h2 class="main-heading ">
+            Our Digital platform<br>
+            Bring <span>Healthcare Services</span>
+          </h2>
+          <p class="description-text">
+            At Healthcare Network, we understand the importance of accessibility. Our digital platforms bring healthcare services to everybody's fingertips, ensuring that you can access the care you need conveniently and efficiently.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section (Redesigned - Card Style) -->
+  <section class="lorem-ipsum-section py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Content Column (Left) -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="card h-100 border-0 shadow-sm p-4">
+             <h2 class="fw-bold mb-3">Message from CEO</h2>
+             <p>
+              As the CEO of Tabendi Healthcare Network, my vision is to revolutionize the healthcare industry by seamlessly connecting patients with a comprehensive network of healthcare providers. Through our innovative phone app and web app, we aim to bring healthcare services to the fingertips of every individual, ensuring accessibility anytime, anywhere.
+             </p>
+          </div>
+        </div>
+        <!-- Image Column (Right) -->
+        <div class="col-md-6 image-block d-flex justify-content-center">
+           <div class="image-shape-container">
+             <img src="/assets/img/ceo.png" alt="Lorem Ipsum Image" class="img-fluid rounded">
+             <!-- The orange shape will be added via CSS ::before pseudoelement -->
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO Vision Section (Quote Style) -->
+  <section class="ceo-vision-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to create a unified platform that bridges the gap between patients and healthcare professionals. In addition to connecting patients with physicians, nurse practitioners, pharmacies, and imaging centers, our platform aims to encompass the entire spectrum of healthcare services. This includes facilitating easy access to specialized care, diagnostic services, and any other essential healthcare service a patient may require. By developing cutting-edge app software, we intend to streamline the healthcare experience, making it easy for patients to find and connect with providers without delays.
+          </p>
+      
+          <p>
+            By bringing all healthcare services to one platform, we strive to create a seamless experience for users, minimizing the complexity of navigating through different providers and services. Our commitment extends to optimizing the user experience, ensuring that individuals can find the specific healthcare services they need, whenever and wherever they require them.
+          </p>
+      
+          <p>
+            Through the <strong>Tabendi Healthcare Network</strong>, we are not just linking patients with providers; we are building a comprehensive ecosystem that caters to the diverse needs of individuals, contributing to a healthier and thriving society.
+          </p>
+      
+          <p>
+            Tabendi Healthcare Network is committed to providing the best services for patients, prioritizing their well-being and minimizing healthcare costs. We envision a future where healthcare is not only accessible but also efficient, reducing complications due to lack of access to healthcare services.
+          </p>
+      
+          <p>
+            Our goal is to thrive with a healthy society, where individuals have the power to take control of their well-being through our user-friendly platform. By bringing all healthcare services to one platform, we are working towards a future where everyone can experience the benefits of easy-accessible healthcare, ultimately contributing to the overall health and prosperity of our community.
+          </p>
+      
+          <p><strong>Chool Liyanapatabendi, M.D.</strong><br>
+          Internal Medicine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Meet Our Specialists Section (Alternating Layout) -->
+ 
+
+  <!-- Footer Include -->
+  <div include-html="libs/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="include.js"></script>
+  <script src="assets/js/dynamic_forms.js"></script>
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+</body>
+</html> 

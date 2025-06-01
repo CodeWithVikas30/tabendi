@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tabendi Healthcare Network</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+    }
+
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-box {
+      background-color: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+    section.contact-section p {
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-family: "Poppins";
+}
+    .contact-info {
+    background-color: #4a1f0d;
+    color: #fff;
+    padding: 40px 30px !important;
+    border-radius: 20px;
+    height: 100%;
+}
+    .contact-info h5 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-info .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .contact-info .info-item i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .form-control {
+      border-radius: 10px;
+      padding: 12px 15px;
+      font-size: 15px;
+    }
+
+    .btn-submit {
+        text-align: center;
+  background-color: #F47C20 !important;  /* Ensure it overrides Bootstrap */
+  color: #ffffff !important;             /* Red text, if that's intended */
+  font-weight: 600;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.btn-submit:hover {
+  background-color: #171412 !important;  /* Dark hover effect */
+  color: #fff !important;                /* Optional: make text white on hover */
+}
+
+
+    @media (max-width: 767px) {
+      .contact-info {
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <div include-html="/libs/header.html"></div>
+
+  <!-- Get In Touch Section -->
+  <section class="contact-section">
+    <img src="/assets/img/bg.png" alt="Contact Background" class="contact-bg-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3>Get In Touch</h3>
+          <p>We're here to help! If you have any questions, need assistance,<br> or want to learn more about our services, feel free to reach out.</p>
+        </div>
+      </div>
+      <div class="row contact-box">
+        
+        <!-- Left Contact Info -->
+        <div class="col-md-5 contact-info d-flex flex-column justify-content-center">
+          <h5>Contact Information</h5>
+          <p>We’re here to help! For questions or assistance, feel free to reach out and contact us anytime.</p>
+  
+          <div class="info-item">
+            <img src="/assets/img/icon-1.png" alt="Contact Info">
+            <span>Bessie Cooper</span>
+          </div>
+  
+          <div class="info-item">
+            <img src="/assets/img/icon-2.png" alt="Contact Info">
+            <span>support@gmail.com</span>
+          </div>
+  
+          <div class="info-item">
+            <img src="/assets/img/icon-3.png" alt="Contact Info">
+            <span>+1 658 584 6589</span>
+          </div>
+  
+          <div class="info-item">
+            <img src="/assets/img/icon-4.png" alt="Contact Info">
+            <span>2118 Thornridge Cir. Syracuse, Connecticut 35624</span>
+          </div>
+        </div>
+  
+        <!-- Right Contact Form -->
+        <div class="col-md-7 p-4">
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class="form-label">Name*</label>
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone*</label>
+                <input type="text" class="form-control" placeholder="Phone Number">
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Email*</label>
+              <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+  
+            <div class="mb-4">
+              <label class="form-label">Message</label>
+              <textarea rows="4" class="form-control" placeholder="Enter here"></textarea>
+            </div>
+  
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Include -->
+  <div include-html="libs/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="include.js"></script>
+  <script src="assets/js/dynamic_forms.js"></script>
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+</body>
+</html> 
