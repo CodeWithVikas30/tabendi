@@ -9,6 +9,13 @@ body {
   padding: 0;
   background: linear-gradient(89.86deg, #fff4ec 0.12%, #fff4eb 63.69%);
 }
+
+.carousel-item .hero-section {
+  min-height: 550px; /* Adjust as needed to fit content without overflow */
+  display: flex; /* Use flex to align content vertically if needed */
+  align-items: center; /* Center content vertically */
+}
+
 section.aboutus-section .text-orange {
   color: #f37021;
   position: relative;
@@ -985,7 +992,7 @@ section.process-section h2 {
   margin: 0 auto 10px;
 }
 .blue-bg {
-  background-color: #2f59f3;
+  background-color: #276ef1;
 }
 .green-bg {
   background-color: #2ebd84;
